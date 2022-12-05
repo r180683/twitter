@@ -1,0 +1,55 @@
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "vv",
+  "password": "richbb",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NTQ0MTgzfQ.fVzPKJFH8r6Xkb2vRmNGquaVzbkkX8YF42U_sMOXAFU
+
+###
+GET http://localhost:3000/user/following/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NTQ0MTgzfQ.fVzPKJFH8r6Xkb2vRmNGquaVzbkkX8YF42U_sMOXAFU
+
+###
+GET http://localhost:3000/user/followers/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NTQ0MTgzfQ.fVzPKJFH8r6Xkb2vRmNGquaVzbkkX8YF42U_sMOXAFU
+
+###
+GET http://localhost:3000/tweets/1/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NjQyODYwfQ.ZHWbvF9-HKabzf3bvVZcJ4_wYNMM4-wN4ZyH14xLdN4
+
+###
+GET http://localhost:3000/tweets/2/likes/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NTQ0MTgzfQ.fVzPKJFH8r6Xkb2vRmNGquaVzbkkX8YF42U_sMOXAFU
+
+###
+GET http://localhost:3000/tweets/1/replies/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NTQ0MTgzfQ.fVzPKJFH8r6Xkb2vRmNGquaVzbkkX8YF42U_sMOXAFU
+
+###
+POST http://localhost:3000/user/tweets/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NTQ0MTgzfQ.fVzPKJFH8r6Xkb2vRmNGquaVzbkkX8YF42U_sMOXAFU
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+###
+DELETE http://localhost:3000/tweets/1/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5NTQ0MTgzfQ.fVzPKJFH8r6Xkb2vRmNGquaVzbkkX8YF42U_sMOXAFU
